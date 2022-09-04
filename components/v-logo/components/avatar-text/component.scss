@@ -1,0 +1,13 @@
+.v-logo-avatar-text {
+  display: flex;
+  align-items: center;
+
+  &__label {
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  &--view-light {
+    color: $LOGO_AVATAR_TEXT_LIGHT_COLOR;
+  }
+}

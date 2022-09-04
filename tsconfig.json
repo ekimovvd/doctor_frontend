@@ -1,22 +1,36 @@
 {
   "compilerOptions": {
-    "target": "ES2018",
     "module": "ESNext",
-    "moduleResolution": "Node",
-    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
-    "esModuleInterop": true,
+    "target": "ES2020",
+    "moduleResolution": "node",
     "allowJs": true,
-    "sourceMap": true,
-    "strict": true,
-    "noEmit": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "importsNotUsedAsValues": "preserve",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "pretty": true,
+    "outDir": "./tmp",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM", "DOM.ITERABLE"],
     "baseUrl": ".",
-    "noImplicitThis": false,
     "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
-    },
-    "types": ["@nuxt/types", "@types/node"]
+      "~/*": ["./*"]
+    }
   },
-  "exclude": ["node_modules", ".nuxt", "dist"]
+  "types": ["@types/node", "@nuxt/types"],
+  "include": [
+    "./definitions.d.ts",
+    "./shim.d.ts",
+    "*.js",
+    "*.ts",
+    "*.d.ts",
+    ".eslintrc.js",
+    "nuxt.config.js",
+    "postcss.config.js",
+    "./**/*.d.ts",
+    "./**/*.ts",
+    "./**/*.js",
+    "./**/*.vue"
+  ],
+  "exclude": ["./node_modules", ".nuxt", "dist"]
 }

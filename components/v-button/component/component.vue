@@ -1,7 +1,10 @@
 <template>
-  <div :class="b()">
-    <div :class="b('container')" class="container container--max"></div>
-  </div>
+  <component
+    :class="b()"
+    :is="getComponent"
+    :params="params"
+    @click="handleClick"
+  />
 </template>
 
 <script lang="ts" src="./component.ts"></script>

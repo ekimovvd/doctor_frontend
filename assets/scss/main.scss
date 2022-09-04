@@ -72,6 +72,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:disabled {
+    opacity: $OPACITY;
+    cursor: default;
+  }
+
+  &:active {
+    opacity: $OPACITY;
+  }
 }
 
 input {

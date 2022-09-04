@@ -1,0 +1,32 @@
+.v-button-icon {
+  padding: 8px;
+
+  &__icon {
+    font-size: 19px;
+  }
+
+  &--view-light {
+    border-radius: $BORDER_RADIUS;
+
+    .v-button-icon__icon {
+      color: $BUTTON_ICON_LIGHT_COLOR;
+    }
+
+    &:hover {
+      background: $BUTTON_ICON_LIGHT_BACKGROUND_HOVER;
+    }
+  }
+
+  &--view-secondary {
+    background: $BUTTON_ICON_SECONDARY_BACKGROUND;
+    border-radius: $BORDER_RADIUS_CIRCLE;
+
+    .v-button-icon__icon {
+      color: $BUTTON_ICON_SECONDARY_COLOR;
+    }
+
+    &:hover {
+      background: $BUTTON_ICON_SECONDARY_BACKGROUND_HOVER;
+    }
+  }
+}

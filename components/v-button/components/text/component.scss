@@ -1,0 +1,23 @@
+.v-button-text {
+  font-size: 13px;
+  padding: 10px 15px;
+  border-radius: $BORDER_RADIUS;
+
+  &--view-primary {
+    color: $BUTTON_TEXT_PRIMARY_COLOR;
+    background: $BUTTON_TEXT_PRIMARY_BACKGROUND;
+
+    &:hover {
+      background: $BUTTON_TEXT_PRIMARY_BACKGROUND_HOVER;
+    }
+  }
+
+  &--view-secondary {
+    color: $BUTTON_TEXT_SECONDARY_COLOR;
+    background: $BUTTON_TEXT_SECONDARY_BACKGROUND;
+
+    &:hover {
+      background: $BUTTON_TEXT_SECONDARY_BACKGROUND_HOVER;
+    }
+  }
+}

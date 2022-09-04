@@ -1,7 +1,7 @@
 <template>
-  <div :class="b()">
-    <div :class="b('container')" class="container container--max"></div>
-  </div>
+  <button :class="b('', { view })" :disabled="disabled" @click="handleClick">
+    {{ params.label }}
+  </button>
 </template>
 
 <script lang="ts" src="./component.ts"></script>

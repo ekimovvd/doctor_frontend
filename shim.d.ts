@@ -5,3 +5,4 @@ declare module "*.vue" {
 }
 
 declare module "vue-bem-cn";
+declare module "v-click-outside";

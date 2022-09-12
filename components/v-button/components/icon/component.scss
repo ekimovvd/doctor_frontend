@@ -15,6 +15,10 @@
     &:hover {
       background: $BUTTON_ICON_LIGHT_BACKGROUND_HOVER;
     }
+
+    &.v-button-icon--active {
+      background: $BUTTON_ICON_LIGHT_BACKGROUND_ACTIVE;
+    }
   }
 
   &--view-secondary {
@@ -27,6 +31,10 @@
 
     &:hover {
       background: $BUTTON_ICON_SECONDARY_BACKGROUND_HOVER;
+    }
+
+    &.v-button-icon--active {
+      background: $BUTTON_ICON_SECONDARY_BACKGROUND_ACTIVE;
     }
   }
 }

@@ -1,0 +1,15 @@
+.v-navbar {
+  background: $NAVBAR_BACKGROUND;
+  padding: 10px 0;
+
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 5px;
+  }
+}

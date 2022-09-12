@@ -10,11 +10,19 @@ export enum VButtonParamsTypeEnum {
   text = "text-component",
   iconText = "icon-text-component",
   svgText = "svg-text-component",
+  select = "select-component",
 }
 
-export enum VButtonParamsLabelEnum {}
+export enum VButtonParamsLabelEnum {
+  profile = "Профиль",
+}
 
-export enum VButtonParamsIconEnum {}
+export enum VButtonParamsIconEnum {
+  user = "bx bxs-user",
+  sun = "bx bxs-sun",
+  moon = "bx bxs-moon",
+  globe = "bx bx-globe",
+}
 
 export enum VButtonParamsStyleEnum {
   light = "light",

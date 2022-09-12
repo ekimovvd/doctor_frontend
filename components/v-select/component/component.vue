@@ -2,10 +2,9 @@
   <component
     :class="b()"
     :is="getComponent"
-    :params="params"
-    :active="active"
-    :disabled="disabled"
-    @click="handleClick"
+    :data="data"
+    :value="value"
+    @select="handleSelect"
   />
 </template>
 

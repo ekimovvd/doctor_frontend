@@ -1,0 +1,19 @@
+.v-navbar-language {
+  position: relative;
+
+  &__select {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    min-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    opacity: 0;
+    transition: $TRANSITION;
+
+    &--show {
+      overflow: visible;
+      opacity: 1;
+    }
+  }
+}

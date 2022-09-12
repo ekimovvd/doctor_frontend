@@ -21,7 +21,7 @@ export default {
 
   css: ["~/assets/scss/main.scss", "boxicons/css/boxicons.min.css"],
 
-  plugins: ["~/plugins/vue-bem-cn.ts"],
+  plugins: ["~/plugins/vue-bem-cn.ts", "~/plugins/v-click-outside"],
 
   components: true,
 

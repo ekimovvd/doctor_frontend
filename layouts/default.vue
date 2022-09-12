@@ -1,16 +1,9 @@
 <template>
   <div :class="b()">
+    <VNavbar />
     <Nuxt />
   </div>
 </template>
 
-<script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator";
-
-@Component({
-  name: "default",
-})
-export default class Default extends Vue {}
-</script>
-
+<script lang="ts" src="./default.ts"></script>
 <style lang="scss" src="./default.scss"></style>

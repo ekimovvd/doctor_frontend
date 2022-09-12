@@ -15,6 +15,7 @@
     "lodash": "4.17.21",
     "nuxt": "2.15.8",
     "nuxt-property-decorator": "2.9.1",
+    "v-click-outside": "^3.2.0",
     "vue": "2.6.14",
     "vue-bem-cn": "1.1.1",
     "vue-server-renderer": "2.6.14",

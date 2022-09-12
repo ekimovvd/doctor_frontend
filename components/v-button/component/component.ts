@@ -23,6 +23,16 @@ export default class VButton extends Vue {
     required: true,
   })
   readonly params: VButtonParamsInterface;
+  @Prop({
+    type: Boolean,
+    default: false,
+  })
+  readonly active: boolean;
+  @Prop({
+    type: Boolean,
+    default: false,
+  })
+  readonly disabled: boolean;
 
   get getComponent(): VButtonParamsTypeEnum {
     return this.params.type;

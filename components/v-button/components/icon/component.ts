@@ -18,6 +18,11 @@ export default class VButtonIcon extends Vue {
     type: Boolean,
     default: false,
   })
+  readonly active: boolean;
+  @Prop({
+    type: Boolean,
+    default: false,
+  })
   readonly disabled: boolean;
 
   get view(): VButtonParamsStyleEnum {

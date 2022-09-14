@@ -1,0 +1,63 @@
+$root-name: "v-select-links";
+
+.#{$root-name} {
+  background: $SELECT_LINKS_BACKGROUND;
+  border-radius: $BORDER_RADIUS;
+  padding: 10px;
+  display: grid;
+  grid-row-gap: 5px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    transition: $TRANSITION;
+    border-radius: $BORDER_RADIUS;
+
+    &:hover {
+      background: $SELECT_LINKS_LINK_BACKGROUND_HOVER;
+    }
+
+    &:active {
+      opacity: $OPACITY;
+    }
+
+    &.nuxt-link-exact-active {
+      background: $SELECT_LINKS_LINK_BACKGROUND_ACTIVE;
+
+      .#{$root-name}__icon-block {
+        background: $SELECT_LINKS_ICON_BACKGROUND_ACTIVE;
+      }
+
+      .#{$root-name}__icon {
+        color: $SELECT_LINKS_ICON_COLOR_ACTIVE;
+      }
+
+      .#{$root-name}__label {
+        color: $SELECT_LINKS_LABEL_COLOR_ACTIVE;
+      }
+    }
+  }
+
+  &__icon-block {
+    width: 32px;
+    height: 32px;
+    border-radius: $BORDER_RADIUS;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    background: $SELECT_LINKS_ICON_BACKGROUND;
+  }
+
+  &__icon {
+    font-size: 19px;
+    color: $SELECT_LINKS_ICON_COLOR;
+  }
+
+  &__label {
+    font-size: 14px;
+    color: $SELECT_LINKS_LABEL_COLOR;
+    font-weight: 500;
+  }
+}

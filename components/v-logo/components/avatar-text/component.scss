@@ -1,10 +1,15 @@
 .v-logo-avatar-text {
   display: flex;
   align-items: center;
+  transition: $TRANSITION;
 
   &__label {
     font-size: 18px;
     margin-left: 5px;
+  }
+
+  &:active {
+    opacity: $OPACITY;
   }
 
   &--view-light {

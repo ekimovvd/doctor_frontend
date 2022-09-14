@@ -1,4 +1,6 @@
-.v-button-icon-text {
+$root-name: "v-button-icon-text";
+
+.#{$root-name} {
   padding: 8px;
 
   &__icon {
@@ -16,6 +18,10 @@
 
     &:hover {
       background: $BUTTON_ICON_TEXT_LIGHT_BACKGROUND_HOVER;
+    }
+
+    &.#{$root-name}--active {
+      background: $BUTTON_ICON_TEXT_LIGHT_BACKGROUND_ACTIVE;
     }
   }
 }

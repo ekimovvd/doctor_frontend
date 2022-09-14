@@ -5,14 +5,14 @@
     position: absolute;
     top: 40px;
     right: 0;
-    min-width: 200px;
-    max-height: 200px;
-    overflow: hidden;
+    width: 250px;
+    max-height: 250px;
+    visibility: hidden;
     opacity: 0;
     transition: $TRANSITION;
 
     &--show {
-      overflow: visible;
+      visibility: visible;
       opacity: 1;
     }
   }

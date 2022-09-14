@@ -1,4 +1,6 @@
-.v-button-icon {
+$root-name: "v-button-icon";
+
+.#{$root-name} {
   padding: 8px;
 
   &__icon {
@@ -8,7 +10,7 @@
   &--view-light {
     border-radius: $BORDER_RADIUS;
 
-    .v-button-icon__icon {
+    .#{$root-name}__icon {
       color: $BUTTON_ICON_LIGHT_COLOR;
     }
 
@@ -16,7 +18,7 @@
       background: $BUTTON_ICON_LIGHT_BACKGROUND_HOVER;
     }
 
-    &.v-button-icon--active {
+    &.#{$root-name}--active {
       background: $BUTTON_ICON_LIGHT_BACKGROUND_ACTIVE;
     }
   }
@@ -25,7 +27,7 @@
     background: $BUTTON_ICON_SECONDARY_BACKGROUND;
     border-radius: $BORDER_RADIUS_CIRCLE;
 
-    .v-button-icon__icon {
+    .#{$root-name}__icon {
       color: $BUTTON_ICON_SECONDARY_COLOR;
     }
 
@@ -33,7 +35,7 @@
       background: $BUTTON_ICON_SECONDARY_BACKGROUND_HOVER;
     }
 
-    &.v-button-icon--active {
+    &.#{$root-name}--active {
       background: $BUTTON_ICON_SECONDARY_BACKGROUND_ACTIVE;
     }
   }

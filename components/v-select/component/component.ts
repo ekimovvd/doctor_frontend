@@ -1,6 +1,7 @@
 import { Component, Emit, Prop, Vue } from "nuxt-property-decorator";
 
 import VSelectButtons from "../components/buttons/component";
+import VSelectLinks from "../components/links/component";
 
 import {
   VSelectDataInterface,
@@ -13,6 +14,7 @@ import {
   name: "v-select",
   components: {
     "buttons-component": VSelectButtons,
+    "links-component": VSelectLinks,
   },
 })
 export default class VSelect extends Vue {

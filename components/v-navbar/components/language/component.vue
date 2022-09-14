@@ -1,13 +1,12 @@
 <template>
-  <div :class="b()">
+  <div :class="b()" v-click-outside="handleUiSelectClose">
     <VButton
       :params="UiButton"
       :active="UiSelectIsShow"
-      @click.stop="handleUiSelectIsShow"
+      @click="handleUiSelectIsShow"
     />
     <VSelect
       :class="b('select', { show })"
-      v-click-outside="handleUiSelectClose"
       :params="UiSelect"
       :data="UiSelectData"
       :value="language"

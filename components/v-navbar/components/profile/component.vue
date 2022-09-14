@@ -1,6 +1,17 @@
 <template>
-  <div :class="b()">
-    <VButton :params="UiButton" @click="handleProfile" />
+  <div :class="b()" v-click-outside="handleUiSelectClose">
+    <VButton
+      :params="UiButton"
+      :active="UiSelectIsShow"
+      @click="handleUiSelectIsShow"
+    />
+    <VSelect
+      :class="b('select', { show })"
+      :params="UiSelect"
+      :data="UiSelectData"
+    >
+      button
+    </VSelect>
   </div>
 </template>
 

@@ -1,5 +1,9 @@
 <template>
-  <button :class="b('', { view })" :disabled="disabled" @click="handleClick">
+  <button
+    :class="b('', { view, active })"
+    :disabled="disabled"
+    @click="handleClick"
+  >
     <i :class="[b('icon'), params.icon]"></i>
     <p :class="b('label')">{{ params.label }}</p>
   </button>

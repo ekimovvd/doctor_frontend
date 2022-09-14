@@ -6,15 +6,20 @@ export interface VSelectDataInterface {
   label?: VSelectDataLabelEnum;
   iconSelected?: VSelectDataIconSelectedEnum;
   value?: VSelectDataValueEnum;
+  to?: VSelectDataToEnum;
+  icon?: VSelectDataIconEnum;
 }
 
 export enum VSelectParamsTypeEnum {
   buttons = "buttons-component",
+  links = "links-component",
 }
 
 export enum VSelectDataLabelEnum {
   ru = "Русский язык",
   en = "Английский язык",
+  profile = "Профиль",
+  messages = "Сообщения",
 }
 
 export enum VSelectDataIconSelectedEnum {
@@ -24,6 +29,16 @@ export enum VSelectDataIconSelectedEnum {
 export enum VSelectDataValueEnum {
   ru = "ru",
   en = "en",
+}
+
+export enum VSelectDataToEnum {
+  profile = "/profile",
+  messages = "/messages",
+}
+
+export enum VSelectDataIconEnum {
+  profile = "bx bxs-user",
+  messages = "bx bxs-chat",
 }
 
 export const VSelectParamsFactory = (

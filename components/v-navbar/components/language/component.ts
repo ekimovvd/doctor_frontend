@@ -2,6 +2,7 @@ import { Component, Vue } from "nuxt-property-decorator";
 
 import VButton from "~/components/v-button/component/component";
 import VSelect from "~/components/v-select/component/component";
+
 import vClickOutside from "v-click-outside";
 
 import { UiButton, UiSelect, UiSelectData } from "./constants";
